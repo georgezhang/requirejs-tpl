@@ -35,7 +35,7 @@ define(['text', 'underscore'], function (text, _) {
     'use strict';
 
     var buildMap = {},
-        buildTemplateSource = "define('{pluginName}!{moduleName}', function () { return {source}; });\n";
+        buildTemplateSource = "define('{pluginName}!{moduleName}', [\'underscore\'] function (_) { return {source}; });\n";
 
     return {
         version: '0.0.2',
